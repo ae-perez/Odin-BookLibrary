@@ -1,0 +1,273 @@
+/* color palette 
+green palette
+#283618
+#606c38
+#fefae0
+
+cookie palette
+#3B2314
+#8B5E3C
+#F5E6D3
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Google Sans', sans-serif;
+  background-color: #3b2314;
+  color: #f5e6d3;
+}
+
+.outer-container {
+  background-color: transparent;
+  margin: 40px auto;
+  width: 60%;
+  height: 100%;
+  padding: 40px;
+  border: 1px solid #f5e6d34c;
+  border-radius: 25px;
+  box-shadow: 4px 8px 8px #f5e6d34c;
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#app-title {
+  margin: 25px 0px 5px 0px;
+  font-size: 60px;
+}
+
+p {
+  margin: 0px;
+  font-size: 25px;
+}
+
+#search-form {
+  display: flex;
+  align-items: center;
+  margin: 40px;
+}
+
+input {
+  background-color: transparent;
+  box-sizing: border-box;
+  font-family: 'Google Sans', sans-serif;
+  font-size: 16px;
+  color: #3b2314;
+}
+
+#search-input {
+  background-color: transparent;
+  width: 450px;
+  height: 50px;
+  border-radius: 0 25px 25px 0;
+  border: 1px #f5e6d34c solid;
+  border-left-style: none;
+  margin-right: 10px;
+  padding: 15px;
+  color: #f5e6d3;
+  outline: none;
+}
+
+#addNew-button {
+  margin-left: 10px;
+}
+
+#form-title {
+  font-size: 35px;
+}
+
+#add-form-container {
+  width: 100%;
+  background-color: #f5e6d3;
+  border-radius: 20px;
+  padding: 20px;
+  color: #3b2314;
+}
+
+.add-form-nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.add-form-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#close-form-button {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  color: #3b2314;
+  padding: 0;
+}
+
+#close-form-button > svg {
+  outline: none;
+  border: none;
+}
+
+#add-form {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#add-form > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 24px;
+}
+
+#add-form label {
+  width: 280px;
+  margin: 0;
+  text-align: right;
+}
+
+.error {
+  display: block;
+  margin-left: 320px; /* same as label width */
+  margin-bottom: 10px;
+  color: red;
+}
+
+#add-form > div > input,
+#add-form > div > select {
+  flex: 1;
+  max-width: 290px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: #3b2314 solid 1px;
+  border-radius: 20px;
+  color: #3b2314;
+  height: 50px;
+  padding: 0 16px;
+}
+
+#add-form > button {
+  display: block;
+  margin: 24px auto 0;
+}
+
+#add-form > input:focus {
+  border: #3b2314 solid 2px;
+  background-color: white;
+}
+
+#book-status {
+  appearance: none; /* reset native UI */
+  -webkit-appearance: none; /* Safari */
+  -moz-appearance: none; /* Firefox (older) */
+
+  box-sizing: border-box;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #3b2314;
+  background-color: transparent;
+  color: #3b2314;
+}
+
+#book-status:focus,
+#book-status:focus-visible {
+  outline: 1px solid #3b2314;
+  background-color: white;
+}
+
+svg {
+  margin: 0px;
+  padding: 10px 10px;
+  width: 40px;
+  height: 28px;
+  border: 1px #fefae05c solid;
+  border-radius: 25px 0px 0px 25px;
+}
+
+/* this effects search bar input and add form input */
+input {
+  background-color: transparent;
+  width: 400px;
+  height: 50px;
+  border-radius: 0px 25px 25px 0px;
+  border: 1px #f5e6d34c solid;
+  border-left-style: none;
+  margin-right: 10px;
+  padding: 15px;
+  color: #f5e6d3;
+  font-family: 'Google Sans', sans-serif;
+  font-size: 16px;
+  outline: none;
+}
+
+button {
+  background-color: #8b5e3c;
+  border-radius: 25px;
+  border: 1px #fefae05c solid;
+  width: 100px;
+  height: 55px;
+  font-family: 'Google Sans', sans-serif;
+  color: #f5e6d3;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+table {
+  font-family: arial, sans-serif;
+  width: 100%;
+  overflow: scroll;
+  border-radius: 30px;
+  overflow: hidden;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+thead {
+  background-color: #8b5e3c;
+}
+
+td,
+th {
+  text-align: center;
+  padding: 20px;
+
+  border: none;
+  border-bottom: 1px solid #c9a17b;
+}
+
+tbody {
+  background-color: #f5e6d3;
+  color: #3b2314;
+  border-bottom-left-radius: 20px;
+}
+
+.modify-cell {
+  display: flex;
+  gap: 15px;
+}
+
+.delete-button > svg,
+.edit-button > svg {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  border-radius: 40%;
+}
+
+.delete-button,
+.edit-button {
+  background: none;
+  border: #8b5e3c solid 2px;
+  width: 60px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
